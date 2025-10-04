@@ -1,0 +1,75 @@
+body {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1{
+    position:absolute;
+    width: 300;
+    height: 85%;
+    
+    background-color: #111;
+    color: azure;
+}
+
+label{
+  position: absolute;
+  width: 100;
+  height: 63%;
+  color: azure;
+  font-weight: bold;
+}
+
+input{
+  position: absolute;
+  width: 100;
+  bottom: 65%;
+}
+
+#attack-box {
+  position: relative;
+  width: 600px;
+  height: 40px;
+  background-color: #333;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+#perfect-zone {
+  position: absolute;
+  left: 280px;
+  width: 40px;
+  height: 100%;
+  background-color: red;
+  opacity: 0.5;
+}
+
+#cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+}
+
+#left-partial-zone,
+#right-partial-zone {
+  position: absolute;
+  width: 31px;
+  height: 100%;
+  background-color: orange;
+  opacity: 0.3;
+}
+
+#left-partial-zone {
+  left: 250px;
+}
+
+#right-partial-zone {
+  left: 320px; 
+}
