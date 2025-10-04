@@ -16,6 +16,13 @@ h1{
     color: azure;
 }
 
+h2{
+  position: absolute;
+  width: 300;
+  bottom: 40%;
+  color: azure;
+}
+
 label{
   position: absolute;
   width: 100;

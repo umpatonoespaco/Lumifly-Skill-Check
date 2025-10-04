@@ -138,7 +138,7 @@ function reset() {
 
 
 
-document.addEventListener('click', () => {
+document.addEventListener('click', (event) => {
 
   if (event.target === usernameInput) return
 
@@ -153,6 +153,22 @@ document.addEventListener('click', () => {
   }
 })
 
+document.addEventListener('keydown', function(event) {
+  if (event.code === 'Space') {
+    event.preventDefault
+
+
+    if (!hasStarted) {
+      hasStarted = true
+      running = true
+      startTime = null
+
+      requestAnimationFrame(animateCursor)
+    } else if (running) {
+      stopCursor()
+    }
+  }
+})
 
 
 
